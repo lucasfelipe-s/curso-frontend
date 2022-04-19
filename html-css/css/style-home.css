@@ -1,0 +1,182 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #EEEEEE;
+    line-height: normal;
+}
+
+/* Rodapé no final da página */
+#tudo{
+    min-height: 100%;
+    position: relative;
+}
+#rodape{
+    position: absolute;
+    bottom: 0;
+}
+* html #tudo {
+    height: 100%;
+}
+#conteudo {
+	padding-bottom: 30px;
+	}
+/* Header Styles */
+header{
+    width: 100%;
+    height: 3rem;
+    background-color: white; 
+    position: fixed; 
+    top: 0;  
+}
+
+header h1{
+    text-align: center;
+    padding: 0.75rem;
+}
+
+/* Section Styles */
+nav{
+    margin-top: 50px;
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav li{
+    margin: 0 10px 10px;
+}
+
+nav h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 10px 10px;
+    margin-top: 3rem;
+    font-size: 1rem;
+}
+
+nav li:hover{
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: linear;
+    transition-duration: 0.2s
+}
+
+.primeiro{
+    border-top: 1px solid rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+.ultimo{
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+article{
+    margin: 100px auto;
+    float: left;
+    width: 85%;
+}
+
+.img-escola{
+    margin: 0 0 50px 0;
+}
+
+.curiosidades{
+    margin-top: 20px;
+}
+
+.brazil{
+    height: 200px;
+    width: 200px;
+    background-color: #6D9886;
+    border-radius: 50%;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.brazil img{
+    width: 100%;
+}
+
+.brazil:hover{
+    height: 250px;
+    width: 250px;
+    transition-duration: 1s;
+    overflow: hidden;
+    filter: grayscale(0%);
+}
+
+article div{
+    margin:10px 50px 0px 10px;
+    float: left;
+}
+
+article a, article h2{
+    color:black;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer{
+    background-color: white;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+footer p{
+    text-align: center;
+}
+footer a{
+color: black;
+font-weight: bold;
+text-decoration: none;
+}
+
+/* ANTES AS IMAGENS SE DIVIDIAM EM MAIS LINHAS E O MENU FICAVA DISTORCIDO TAMBEM, AGORA ESTA FUNCIONAL */
+
+@media (max-width: 1200px) {
+    nav, article {
+     width: 100%;
+     height: auto;
+     margin-top: 1rem;
+    } 
+    .images{
+        margin: 0;
+    }
+    .brazil{
+        width: 150px;
+        height: 150px;
+    }
+    .brazil:hover{
+        height: 200px;
+        width: 200px;
+        transition-duration: 1s;
+        overflow: hidden;
+        filter: grayscale(0%);
+    }
+}
+@media (max-width: 1024px) {
+    .brazil{
+        filter: grayscale(0);
+    }
+}
+/* Mobile */
+@media (max-width: 642px) {
+    nav, article {
+     width: 100%;
+     height: auto;
+     margin-top: 1rem;
+    } 
+    .images{
+        display: none;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>Formulário</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		<link rel="stylesheet" type="text/css" href="./css/style-formulario.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	</head>
+
+	<body >
+		<div id="tudo">
+			<header>
+				<h1 class="cabecalho"><strong>Formulário</strong></h1>
+				<ul class="topnav">
+					<li><a href="./homepage.html">Home</a></li>
+					<li><a href="./contato.html">Contato</a></li>
+				</ul>
+			</header>
+
+			<div id="conteudo">
+				<section>
+					<article>
+						<h2>Exercicio "Formulários" refatorada</h2>
+						<form method="post">
+
+							<div>
+								<label for="nome">Nome:</label><br>
+								<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+							</div>
+
+							<div>
+								<label for="email">E-mail:</label><br>
+								<input type="text" name="email" id="email" placeholder="Digite seu e-mail">
+							</div>
+
+							<div>
+								<label for="mensagem">Mensagem</label><br>
+								<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+							</div>
+
+							<div>
+								<p>
+									<label>Qual línguagem você prefere?</label>
+									<input type="radio" name="linguagens" value="html">HTML
+									<input type="radio" name="linguagens" value="css">CSS
+									<input type="radio" name="linguagens" value="javascript">JavaScript
+								</p>
+							</div>
+
+							<div>
+								<p>
+									<label>Quais línguagens você sabe?</label>
+									<input type="checkbox" name="linguagens" value="html">HTML
+									<input type="checkbox" name="linguagens" value="css">CSS
+									<input type="checkbox" name="linguagens" value="javascript">JavaScript
+								</p>
+							</div>
+
+							<div>
+								<label>Qual a sua cor favorita?</label>
+								<select>
+									<option value="azul" class="azul">Azul</option>
+									<option value="verde" class="verde">Verde</option>
+									<option value="vermelho" class="vermelho">Vermelho</option>
+								</select>
+							</div>
+
+							<div class="submit">
+								<input type="submit">
+							</div>
+
+						</form>
+					</article>			
+				</section>
+			</div>
+
+			<div id="rodape">
+				<footer>
+					<p><small>Desenvolvido por <a href="https://www.instagram.com/_lucasflp/" target="_blank">@Lucas</a></small></p>
+				</footer>
+			</div>
+
+		</div>
+	</body>
+</html>

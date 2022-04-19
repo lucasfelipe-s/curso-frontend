@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>CSS - Formulários</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+
+	<body >
+		<header>
+			<h1 class="cabecalho"><strong>CURSO FRONT-END - CSS</strong></h1>
+		</header>
+
+		<section>
+			<nav class="menu">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+			<article>
+				<h2>Contato</h2>
+				<p>Preencha os campos abaixo:</p>
+				<form method="post">
+
+					<div>
+						<label for="nome">Nome:</label><br>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">E-mail:</label><br>
+						<input type="text" name="email" id="email" placeholder="Digite seu e-mail">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label><br>
+						<textarea name="mensagem" id="mensagem" rows="5"></textarea>
+					</div>
+
+					<div>
+						<p>
+							<label>Qual línguagem você prefere?</label>
+							<input type="radio" name="linguagens" value="html">HTML
+							<input type="radio" name="linguagens" value="css">CSS
+							<input type="radio" name="linguagens" value="javascript">JavaScript
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>Quais línguagens você sabe?</label>
+							<input type="checkbox" name="linguagens" value="html">HTML
+							<input type="checkbox" name="linguagens" value="css">CSS
+							<input type="checkbox" name="linguagens" value="javascript">JavaScript
+						</p>
+					</div>
+
+					<div>
+						<label>Qual a sua cor favorita?</label>
+						<select>
+							<option value="azul" class="azul">Azul</option>
+							<option value="verde" class="verde">Verde</option>
+							<option value="vermelho" class="vermelho">Vermelho</option>
+						</select>
+					</div>
+
+					<div class="submit">
+						<input type="submit">
+					</div>
+
+				</form>
+			</article>			
+		</section>
+
+		<footer>
+			<p><small>Desenvolvido por <a href="https://github.com/lucasfelipe-s" target="_blank" class="lucas">Lucas</a></small></p>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device, initial-scale=1">
+		<style>
+
+			* {
+
+			 box-sizing: border-box;
+
+			}
+
+
+
+			body {
+
+			 font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+
+
+			/* Style the header */
+
+			header {
+
+			 background-color: #666;
+
+			 padding: 30px;
+
+			 text-align: center;
+
+			 font-size: 35px;
+
+			 color: white;
+
+			}
+
+
+
+			/* Create two columns/boxes that floats next to each other */
+
+			nav {
+
+			 float: left;
+
+			 width: 30%;
+
+			  
+
+			 background: #ccc;
+
+			 padding: 20px;
+
+			}
+
+
+
+			/* Style the list inside the menu */
+
+			nav ul {
+
+			 list-style-type: none;
+
+			 padding: 0;
+
+			}
+
+
+
+			article {
+
+			 float: left;
+
+			 padding: 20px;
+
+			 width: 70%;
+
+			 background-color: #f1f1f1;
+
+			}
+
+
+
+			/* Clear floats after the columns */
+
+			section::after {
+
+			 background: #ccc;
+
+			 content: "";
+
+			 display: table;
+
+			 clear: both;
+
+			}
+
+
+
+			/* Style the footer */
+
+			footer {
+
+			 background-color: #777;
+
+			 padding: 10px;
+
+			 text-align: center;
+
+			 color: white;
+
+			}
+
+
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+			@media (max-width: 600px) {
+
+			 nav, article {
+
+			  width: 100%;
+
+			  height: auto;
+
+			 }
+
+			}
+
+			</style>
+	</head>
+	<body >
+		<header>
+			<h1>Curso Front-End - HTML</h1>
+		</header>
+		<section>
+			<nav>
+				<ul>
+					<li><a href="#inicio">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="./06-formularios.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+				<h1>Título do Artigo</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At urna condimentum mattis pellentesque id nibh tortor. Turpis tincidunt id aliquet risus feugiat in ante. Amet aliquam id diam maecenas ultricies mi eget mauris pharetra. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Egestas sed tempus urna et. Iaculis at erat pellentesque adipiscing commodo elit. Elit at imperdiet dui accumsan sit. Placerat in egestas erat imperdiet sed euismod nisi. Id venenatis a condimentum vitae sapien pellentesque habitant. Convallis posuere morbi leo urna molestie at elementum eu. Sagittis vitae et leo duis ut. Morbi tincidunt ornare massa eget egestas purus viverra accumsan. Porttitor eget dolor morbi non arcu risus.</p>
+
+				<p>Nulla malesuada pellentesque elit eget gravida cum sociis natoque. Lectus nulla at volutpat diam ut. Felis eget nunc lobortis mattis aliquam faucibus purus. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt eget. Praesent tristique magna sit amet. Nunc faucibus a pellentesque sit amet porttitor. Leo duis ut diam quam nulla porttitor. Netus et malesuada fames ac turpis egestas. Odio facilisis mauris sit amet massa vitae tortor. Id consectetur purus ut faucibus pulvinar elementum integer enim neque. Mauris cursus mattis molestie a iaculis at. Id donec ultrices tincidunt arcu non. Penatibus et magnis dis parturient. Quis risus sed vulputate odio ut. Amet venenatis urna cursus eget. Ut tristique et egestas quis ipsum suspendisse. Gravida in fermentum et sollicitudin ac orci phasellus egestas. Ut consequat semper viverra nam libero justo laoreet sit.</p>
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Lucas</p>
+		</footer>
+	</body>
+</html>

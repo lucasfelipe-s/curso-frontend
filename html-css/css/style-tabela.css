@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #EEEEEE;
+    line-height: normal;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+/* Rodapé no final da página */
+#tudo{
+    min-height: 100%;
+    position: relative;
+}
+#rodape{
+    position: absolute;
+    bottom: 0;
+}
+* html #tudo {
+    height: 100%;
+}
+#conteudo {
+	padding-bottom: 30px;
+	}
+/* Header Styles */
+header{
+    width: 100%;
+    height: 2.9rem;
+    background-color: white; 
+    position: fixed; 
+    top: 0;  
+}
+
+header h1{
+    padding: 0.75rem;
+    float: left;
+    /* color: #FFFBE9; */
+    text-transform: uppercase;
+}
+
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    float: right;
+    height: 100%;
+    font-weight: bold;
+}
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0.9rem 1rem;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover{
+    background-color: gainsboro;
+    font-size: 1.1rem;
+    transition-duration: 0.3s;
+}
+
+article h1{
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+table, th, td {
+  /*border: 0.5px solid rgba(255, 255, 255, 1.0);*/
+  border-collapse: collapse;
+  background-color: #646464; 
+  color: white; 
+  vertical-align: middle;
+  text-align: right;
+}
+
+
+table tr td:first-child {
+    text-align: left;
+}
+
+ th{
+    background-color: #191919;
+    text-transform: uppercase;
+    padding: 24px 10px 20px 25px;
+}
+
+tbody td:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 1.1rem;
+}
+
+table tbody tr td:first-child:hover{
+    background-color: #646464;
+    font-size: 1rem;
+}
+
+td{
+    font-weight: 1px;
+    padding: 18px 10px 14px 25px;
+}
+
+tfoot tr td:first-child,.border-r{
+    border-right: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+.a-t{
+    padding: 18px 14px 16px 25px;
+    background-color: #565656;
+}
+
+tfoot td{
+    background-color: #565656;  
+}
+
+.title-2,.a-t{
+    font-weight: bold;
+}
+
+article{
+    text-align: center;
+    width: 100vw;
+    margin-top: 6rem;
+}
+table{
+    text-align: center;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+footer{
+    background-color: white;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+footer p{
+    text-align: center;
+}
+footer a{
+color: black;
+font-weight: bold;
+text-decoration: none;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 750px) {
+ header,footer {
+  width: 100%;
+ }
+}

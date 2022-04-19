@@ -1,0 +1,152 @@
+html{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #EEEEEE;
+    line-height: normal;
+    overflow-x: hidden;
+}
+
+/* Rodapé no final da página */
+#tudo{
+    min-height: 100%;
+    position: relative;
+}
+#rodape{
+    position: absolute;
+    bottom: 0;
+}
+* html #tudo {
+    height: 100%;
+}
+#conteudo {
+	padding-bottom: 30px;
+	}
+/* Header Styles */
+header{
+    width: 100%;
+    height: 2.9rem;
+    background-color: white; 
+    position: fixed; 
+    top: 0;  
+}
+
+header h1{
+    padding: 0.75rem;
+    float: left;
+    /* color: #FFFBE9; */
+    text-transform: uppercase;
+}
+
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    float: right;
+    height: 100%;
+}
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 0.9rem 1rem;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active){
+    background-color: gainsboro;
+    font-size: 1.1rem;
+    transition-duration: 0.3s;
+}
+
+
+.active{
+    background-color: #ccc;
+    /* padding: 0 1rem;
+    margin: 0.9rem 0;
+    border-bottom:1px solid rgba(20, 20, 20, 0.4) ; */
+    font-weight: bold;
+}
+
+section{
+    width: 100vw;
+    overflow: hidden;
+}
+
+article{
+    text-align: center;
+    width: 100vw;
+    margin-top: 8rem;
+}
+
+article h1{
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+}
+
+input[type=text],input[type=email], select , textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: gainsboro;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(184, 183, 183);
+  }
+  
+  article div {
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    margin: 25px 50px;
+    height: 400px;
+  }
+    
+/* Footer Styles */
+footer{
+    background-color: white;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}
+footer p{
+    text-align: center;
+}
+footer a{
+color: black;
+font-weight: bold;
+text-decoration: none;
+}
+
+/* Mobile ARRUMANDO O HEADER QUE FICAVA CORTADO DEPOIS ABAIXO DOS 631PX*/
+@media (max-width: 631px) {
+     header ul {
+         width: 100%;
+    } 
+}
