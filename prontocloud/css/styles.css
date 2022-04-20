@@ -96,8 +96,30 @@ h3,h4{
     padding-top: 20px;
 }
 
-.ultimo-p{
-    padding: 20px 0 0;
+#tenho-interesse{
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+#tenho-interesse p{
+    text-align: center;
+}
+
+html .cog-branding--minimal .cog-branding__powered, :root:root:root:root:root:root .cog-branding--minimal .cog-branding__powered, html .cog-branding--minimal, html .cog-branding--minimal *, :root:root:root:root:root .cog-branding--minimal, :root:root:root:root:root .cog-branding--minimal *{
+    display:none !important;
+}
+
+.cog-heading{
+    display: none !important;
+}
+
+.el-button--default ,.cog-button ,.cog-button--submit{
+    background-color: #254159 !important;
+    border: 2px solid #254159 !important;
+}
+
+.el-button--default:hover ,.cog-button:hover ,.cog-button--submit:hover{
+    background-color: #1d3143 !important;
+    border: 2px solid #1d3143 !important;
 }
 
 .top{
