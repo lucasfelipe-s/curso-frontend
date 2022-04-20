@@ -3,7 +3,6 @@
 
 ## Objetivos
 - Construir um experiência completa para atrair leads para um negócio
-- Projeto digno de portfólio
 
 ## Requisitos
 - Codificação HTML e CSS
