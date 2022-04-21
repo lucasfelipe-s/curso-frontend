@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="java-foundation.css">
+    <script src='./java-foundation.js'></script>
+    <title>Exercício Módulo 12 - JavaScript Foundation</title>
+</head>
+<body>
+    <div id="tudo">
+        <div id="topo">
+            <header>
+                <h1>Lucas Felipe - Java Foundation</h1>
+            </header>
+        </div>
+
+        <div id="conteudo">    
+             <section>
+                 <article>
+                     <div class="travessia">
+                         <h1>Travessia segura</h1>
+                        <p>Um homem precisa atravessar um rio com um barco que possui capacidade apenas para carregar ele mesmo e mais um de seus três pertences, que são: um lobo, uma cabra e um maço de alfafa. Em cada viagem só poderá ir o homem e apenas um de seus pertences. A seguinte regra deverá ser respeitada: O lobo não pode ficar sozinho com a cabra e nem a cabra sozinha com o maço de alfafa. Escreva um algoritmo para fazer a travessia dos pertences que estão em uma margem do rio para a outra.</p>
+
+                        <h2>Algoritmo</h2>
+                        <p>Passo 1: O homem atravessa o rio com a Cabra;</p>
+                        <p>Passo 2: O homem volta sozinho;</p>
+                        <p>Passo 3: O homem pega o Maço de alfafa e atravessa o rio;</p>
+                        <p>Passo 4: O homem deixa o Maço de alfafa e pega a Cabra;</p>
+                        <p>Passo 5: O homem volta com a Cabra para o lado do Lobo;</p>
+                        <p>Passo 6: O homem deixa a Cabra e pega o Lobo;</p>
+                        <p>Passo 7: O homem atravessa o rio e deixa o Lobo com o Maço de alfafa;</p>
+                        <p>Passo 8: O homem volta sozinho e pega a Cabra;</p>
+                        <p>Passo 9: O homem atravessa o rio e se junta com o Lobo e o Maço de alfafa.</p> 
+                    </div>
+                    
+                    <div class="media">
+                        <h1>Calculadora Média 3 valores</h1>
+                        <p>Digite 3 números para calcular a média entre eles:</p>
+                        <input type="number" id="a" placeholder="Número 1">
+                        <input type="number" id="b" placeholder="Número 2">
+                        <input type="number" id="c" placeholder="Número 3">
+
+                        <button onclick="obterMedia()">
+                            Calcular média
+                        </button>
+
+                        <div id="resultado"></div>
+                    </div>
+                </article>
+            </section>
+
+        </div>
+        <div id="rodape">
+            <footer>
+                <p>&copy;<small>Desenvolvido por <a href="https://www.instagram.com/_lucasflp/" target="_blank">@Lucas</a></small></p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
