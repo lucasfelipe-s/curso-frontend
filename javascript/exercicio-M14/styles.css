@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #9BCEF5;
+    --bg-color: #0289F0;
+    --bg2: #2699F2;
+    --text-color: #f0f0f5;
+    --light-color: rgba(255, 255, 255, 0.4);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+form {
+    background: var(--bg2);
+
+    width:100%;
+    max-width: 500px;
+
+    margin: 24px auto 10px;
+    padding: 24px 48px;
+    border-radius: 10px;
+}
+
+form h2 {
+    margin-bottom: 24px;
+}
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+label{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+input,
+button {
+    width: 100%;
+
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+
+    background-color: transparent;
+
+    outline: none;
+
+    color: var(--text-color);
+}
+
+button {
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    padding: 10px;
+
+    cursor: pointer;
+}
+
+.errorEmail,
+.errorCEP,
+.errorUF{
+    color: rgba(255, 0, 0, 0.695);
+    font-weight: 700;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    left: calc(50% - 95px);
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}

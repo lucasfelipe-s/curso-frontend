@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
+
+    
+</head>
+
+<body>
+
+    <form action="">
+
+        <h2>
+            Formulario
+        </h2>
+
+        <div class="input">
+            <label for="">Nome</label>
+            <input required type="text" placeholder="Nome completo..."/>
+        </div>
+
+        <div class="input">
+            <label for="" >E-mail</label>
+            <input required id="email" type="email" placeholder="example@example.com"/>
+            <span class="errorEmail"></span>
+        </div>
+
+        <div class="input">
+            <label for="">Celular</label>
+            <input type="number" placeholder="Número do celular..."/>
+        </div>
+
+        <div class="input">
+            <label for="">CEP</label>
+            <input required id="cep" type="text" placeholder="00000-000"/>
+            <span class="errorCEP"></span>
+        </div>
+
+        <div class="input">
+            <label for="">Cidade</label>
+            <input required type="text" placeholder="São Paulo..."/>
+        </div>
+
+        <div class="input">
+            <label for="">UF</label>
+            <input required id="uf" type="text" placeholder="SP"/>
+            <span class="errorUF"></span>
+        </div>
+
+        <button type="submit"> Enviar </button>
+    </form>
+
+    <footer>
+        <h5>&copy; Todos os direitos reservados. <br>
+            <small>Desenvolvido por: <a href="https://github.com/lucasfelipe-s" target="_blank" rel="noopener noreferrer">Lucas</a>.</small>
+        </h5>
+    </footer>
+
+</body>
+<script src="./script.js"></script>
+</html>
